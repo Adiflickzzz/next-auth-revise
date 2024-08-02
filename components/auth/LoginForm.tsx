@@ -32,8 +32,7 @@ export const LoginForm = () => {
     setSuccessMessage("");
     startTransition(() => {
       login(values).then((data) => {
-        setErrorMessage(data.error);
-        setSuccessMessage(data.success);
+        setErrorMessage(data?.error);
       });
     });
   };
