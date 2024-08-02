@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-interface FooterProps {
+interface BackButtonProps {
   href: string;
   label: string;
 }
 
-export const Footer = ({ href, label }: FooterProps) => {
+export const BackButton = ({ href, label }: BackButtonProps) => {
   return (
     <div className="items-center flex justify-center w-full">
       <Link href={href}>
